@@ -43,7 +43,7 @@ These were essential for version control and collaborative efforts. Git allowed 
 To identify the most demanded skills for the top 3 data roles, I filtered these positions based on their popularity and extracted the top 5 skills for each. This analysis highlights the crucial skills that candidates should focus on depending on their desired role.
 
 View my notebook with detailed steps here:
-[02_skill_demand.ipynb](Project_01\02_skill_demand.ipynb)
+[02_skill_demand.ipynb](Project_01/02_skill_demand.ipynb)
 
 ## Visualize data
 
@@ -127,7 +127,7 @@ The chart reveals that while SQL and Python are foundational across all data-rel
 # 2. How are in-demand skills trending for Data Analysts?
 To understand how in-demand skills are trending for Data Analysts, I analyzed job postings over time to observe the demand fluctuations for various skills. This trend analysis helps identify which skills are gaining or losing relevance in the job market, guiding Data Analysts on which skills to prioritize.
 
-View my notebook with detailed steps here: [03_skill_trend.ipynb](Project_01\02_skill_demand.ipynb)
+View my notebook with detailed steps here: [03_skill_trend.ipynb](Project_01/02_skill_demand.ipynb)
 
 ## Visualize data
 
@@ -160,7 +160,7 @@ plt.tight_layout()
 
 ## Results
 
-![Trending top skills for data analyst in US](Images\skill_trend.png)
+![Trending top skills for data analyst in US](Images/skill_trend.png)
 
 
 ## Insights 
@@ -189,7 +189,7 @@ The graph highlights the evolving landscape of essential skills for data analyst
 # 3. How well do jobs and skills pay for Data Analysts?
 To assess the financial rewards associated with Data Analyst roles and their required skills, I examined salary data across different job postings. This analysis provides insights into the compensation trends for various skills, helping Data Analysts understand the economic value of their expertise.
 
-View my notebook with detailed steps here: [04_salary_analysis.ipynb](Project_01\04_salary_analysis.ipynb)
+View my notebook with detailed steps here: [04_salary_analysis.ipynb](Project_01/04_salary_analysis.ipynb)
 ## Salary Analysis
 
 ## Visualize data
@@ -208,7 +208,7 @@ plt.xlabel('Yearly Salary($USD)')
 
 ## Result
 
-![Salary Analysis for jobs in US](Images\salary_analysis.png)
+![Salary Analysis for jobs in US](Images/salary_analysis.png)
 
 ## Insights 
 
@@ -284,7 +284,7 @@ plt.tight_layout()
 
 ## Results
 
-![Highest paid and most demanded skills for Data Analysts in US](Images\Highest_paid_and_most_demanded_skills_for_Data_Analysts_in_US.png)
+![Highest paid and most demanded skills for Data Analysts in US](Images/Highest_paid_and_most_demanded_skills_for_Data_Analysts_in_US.png)
 
 
 ## Insights
@@ -342,7 +342,7 @@ The box plot reveals a clear distinction between the highest paying jobs and tho
 # 4. What is the most optimal skill to learn as a Data Analyst?
 To determine the most optimal skill to learn as a Data Analyst, I evaluated the intersection of demand and salary data for various skills. This assessment identifies the skill that offers the best balance of high demand and lucrative pay, guiding Data Analysts on which skill to invest in for career advancement.
 
-View my notebook with detailed steps here: [05_optimal_skill.ipynb](Project_01\05_optimal_skills.ipynb)
+View my notebook with detailed steps here: [05_optimal_skill.ipynb](Project_01/05_optimal_skills.ipynb)
 ## Most optimal skills for a Data Analyst in US
 
 ## Visualize
@@ -379,7 +379,7 @@ plt.show()
 
 ## Results
 
-![Most Optimal Skills For A Data Analyst in US](Images\Most_optimal_skills_For_Data_analyst_in_US.png)
+![Most Optimal Skills For A Data Analyst in US](Images/Most_optimal_skills_For_Data_analyst_in_US.png)
 
 
 ## Insights
