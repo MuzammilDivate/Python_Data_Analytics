@@ -1,6 +1,6 @@
 # The Analysis
 
-## 1. What are the most demanded skills for the top 3 most popular data roles?
+# 1. What are the most demanded skills for the top 3 most popular data roles?
 
 To find the most demanded skills for the top 3 data roles, I filtered out those positions by which ones were the most popular and got the top 5 skills for these top 3 roles. This query highlights the most popular job titles and their top skills, showing which skills one should pay attention depending on their target role.
 
@@ -85,7 +85,7 @@ For Data Scientists, the critical skills and their likelihood in job postings ar
 
 The chart reveals that while SQL and Python are foundational across all data-related roles, the demand for specific skills like Excel, Tableau, AWS, Azure, Spark, and R varies significantly based on the job title. Data Analysts should focus on SQL, Excel, and Tableau, while Data Engineers need to emphasize SQL, Python, and cloud platforms like AWS and Azure. Data Scientists should prioritize Python, SQL, and R to stay competitive in their field.
 
-## 2. How are in-demand skills trending for Data Analysts
+# 2. How are in-demand skills trending for Data Analysts
 
 ## Visualize data
 
@@ -144,13 +144,13 @@ plt.tight_layout()
 The graph highlights the evolving landscape of essential skills for data analysts in the US. While SQL and Excel remain foundational, the growing interest in Python and Tableau suggests a shift towards more advanced and versatile data analysis and visualization tools. Job seekers in data analytics should consider enhancing their proficiency in these trending skills to stay competitive in the job market.
 
 
-## 3. How well do jobs and skills pay for Data Analysts
+# 3. How well do jobs and skills pay for Data Analysts
 
-## -> Salary Analysis
+# Salary Analysis
 
 ## Visualize data
 
-```pyhton
+```python
 sns.boxplot(data=df_us_top6, x='salary_year_avg', y='job_title_short', order=df_ordered)
 sns.set_theme(style='ticks')
 plt.ylabel('')
@@ -211,9 +211,9 @@ plt.xlabel('Yearly Salary($USD)')
 The box plot reveals a clear hierarchy in salaries within the data field, with senior roles commanding higher pay and wider salary ranges. This indicates that experience and advanced expertise are highly valued. Data Analysts have the most consistent earnings, while higher-level roles like Senior Data Scientist and Senior Data Engineer show more variability, likely due to bonuses, stock options, and other compensation benefits at higher experience levels.
 
 
-## -> How well do jobs and skills pay for Data Analysts?
+# 4. How well do jobs and skills pay for Data Analysts?
 
-# Highest paid and most demanded skills for Data Analysts in US
+## Highest paid and most demanded skills for Data Analysts in US
 
 # Visualize
 
@@ -295,3 +295,73 @@ plt.tight_layout()
 
 
 The box plot reveals a clear distinction between the highest paying jobs and those with the most counts. Skills like dplyr, bitbucket, and gitlab command top salaries, indicating their specialized and high-demand nature. On the other hand, foundational skills like python, tableau, and sql are widely required and offer competitive compensation, reflecting their critical role in data-related fields.
+
+
+# 5. What is the most optimal skill to learn as a Data Analyst?
+
+## Most optimal skills for a Data Analyst in US
+
+## Visualize
+
+```python
+from adjustText import adjust_text
+from matplotlib.ticker import PercentFormatter
+
+sns.scatterplot(
+    data=df_plot,
+    x='percent',
+    y='median_salary',
+    hue='technology'
+)
+sns.set_theme(style='ticks')
+sns.despine()
+plt.title('Most optimal skills for a Data Analyst in US')
+plt.xlabel('Percent of Data Analyst jobs')
+plt.ylabel('Median yearly salary')
+
+texts =[]
+for i, txt in enumerate(df_plot['skills']):
+    texts.append(plt.text(df_plot['percent'].iloc[i],df_plot['median_salary'].iloc[i], txt))
+
+adjust_text(texts, arrowprops=dict(arrowstyle='->', color='blue'))
+
+ax = plt.gca()
+ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _:f'${int(y/1000)}K'))
+ax.xaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+plt.tight_layout()
+plt.show()
+```
+
+## Results
+
+![Most Optimal Skills For A Data Analyst in US](Project_01\Images\Most_optimal_skills_For_Data_analyst_in_US.png)
+
+
+## Insights
+
+### High Salary and Demand
+
+
+> - Python: As a programming skill, Python is associated with the highest median yearly salary (around $98K) and is required in about 30% of Data Analyst jobs. This highlights Python's value in the industry for tasks like data analysis, automation, and machine learning.
+
+> - SQL: SQL is in the highest demand, required in approximately 55% of Data Analyst jobs, with a median yearly salary of about $90K. This indicates SQL's essential role in database management and querying.
+
+### High Salary, Lower Demand
+
+> - Oracle: Although Oracle is required in only about 15% of Data Analyst jobs, it offers a high median yearly salary (~$96K). This suggests that while not as widely required, expertise in Oracle is highly valued and can command a premium.
+
+### Moderate Salary and Demand
+
+> - Excel: Excel is required in about 45% of Data Analyst jobs with a median yearly salary of around $86K. Despite being a fundamental skill, its median salary is slightly lower compared to other skills, reflecting its widespread use and lower learning curve.
+
+> - Power BI and SAS: Both skills have similar median yearly salaries (~$90K) and are required in about 20% of Data Analyst jobs. This indicates a balanced demand and compensation for these data visualization and analytics tools.
+
+### Lower Salary and Demand
+
+>  * Word: Word is associated with the lowest median yearly salary (around $82K) and is required in about 10% of Data Analyst jobs. While useful, it is not a core technical skill for data analysis, thus reflecting its lower demand and compensation.
+
+## Conclusion
+
+
+This scatter plot provides a clear perspective on the most optimal skills for Data Analysts in the US. Python and SQL stand out as the most valuable skills in terms of both demand and salary. Excel remains a critical tool but offers slightly lower compensation. Specializing in tools like Power BI, SAS, and Oracle can lead to higher salaries, although they are less frequently required. Understanding these trends can help aspiring Data Analysts prioritize their skill development to maximize their job prospects and earning potential.
