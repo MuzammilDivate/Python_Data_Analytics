@@ -70,7 +70,7 @@ fig.tight_layout()
 
 ## Results
 
-![Visualization of Top skills](/Images/Skill_demand_all_data_roles.png)
+![Visualization of Top skills](Images/Skill_demand_all_data_roles.png)
 
 
 ## Insights
