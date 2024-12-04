@@ -43,7 +43,7 @@ These were essential for version control and collaborative efforts. Git allowed 
 To identify the most demanded skills for the top 3 data roles, I filtered these positions based on their popularity and extracted the top 5 skills for each. This analysis highlights the crucial skills that candidates should focus on depending on their desired role.
 
 View my notebook with detailed steps here:
-[02_skill_demand.ipynb](Project_01\Images\02_skill_demand.ipynb)
+[02_skill_demand.ipynb](Project_01\02_skill_demand.ipynb)
 
 ## Visualize data
 
@@ -70,7 +70,7 @@ fig.tight_layout()
 
 ## Results
 
-![Visualization of Top skills](Project_01\Images\Skill_demand_all_data_roles.png)
+![Visualization of Top skills](Images\Skill_demand_all_data_roles.png)
 
 ## Insights
 
@@ -159,7 +159,7 @@ plt.tight_layout()
 
 ## Results
 
-![Trending top skills for data analyst in US](Project_01\Images\skill_trend.png)
+![Trending top skills for data analyst in US](Images\skill_trend.png)
 
 
 ## Insights 
@@ -207,7 +207,7 @@ plt.xlabel('Yearly Salary($USD)')
 
 ## Result
 
-![Salary Analysis for jobs in US](Project_01\Images\salary_analysis.png)
+![Salary Analysis for jobs in US](Images\salary_analysis.png)
 
 ## Insights 
 
@@ -283,7 +283,7 @@ plt.tight_layout()
 
 ## Results
 
-![Highest paid and most demanded skills for Data Analysts in US](Project_01\Images\Highest_paid_and_most_demanded_skills_for_Data_Analysts_in_US.png)
+![Highest paid and most demanded skills for Data Analysts in US](Images\Highest_paid_and_most_demanded_skills_for_Data_Analysts_in_US.png)
 
 
 ## Insights
@@ -378,7 +378,7 @@ plt.show()
 
 ## Results
 
-![Most Optimal Skills For A Data Analyst in US](Project_01\Images\Most_optimal_skills_For_Data_analyst_in_US.png)
+![Most Optimal Skills For A Data Analyst in US](Images\Most_optimal_skills_For_Data_analyst_in_US.png)
 
 
 ## Insights
