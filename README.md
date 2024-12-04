@@ -43,7 +43,7 @@ These were essential for version control and collaborative efforts. Git allowed 
 To identify the most demanded skills for the top 3 data roles, I filtered these positions based on their popularity and extracted the top 5 skills for each. This analysis highlights the crucial skills that candidates should focus on depending on their desired role.
 
 View my notebook with detailed steps here:
-[02_skill_demand.ipynb](Project_01\02_skill_demand.ipynb)
+[02_skill_demand.ipynb](Project_01/Images/02_skill_demand.ipynb)
 
 ## Visualize data
 
